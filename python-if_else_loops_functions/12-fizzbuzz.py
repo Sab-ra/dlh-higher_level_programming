@@ -10,5 +10,5 @@ def fizzbuzz():
             result += 'Fizz '
         else:
             result += (str(i)+' ')
-    print("{}".format(result))
+    print("{}".format(result[:-1]))
     return result
