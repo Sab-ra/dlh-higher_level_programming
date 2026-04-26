@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-number = float(2)
-print(f"Float: {number}")
+number: float | None = None
+print(f"Float: {number:.2f}")
