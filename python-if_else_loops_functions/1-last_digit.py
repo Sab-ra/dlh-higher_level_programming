@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 import random
 number = random.randint(-10000, 10000)
-# Number to string and last_char
-last_char = number(type(str))[-1]
 
-# The char to int: last_digit
-last_digit = last_char(type(int))
+# Last digit comon extraction
+last_digit = abs(number) % 10
 
 # If number is negative
 if number < 0:
