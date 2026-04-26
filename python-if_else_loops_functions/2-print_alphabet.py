@@ -1,4 +1,3 @@
 #!/usr/bin/python3
 
-for i in (a-z):
-    pass
+print(f"{a-z}", end="")
