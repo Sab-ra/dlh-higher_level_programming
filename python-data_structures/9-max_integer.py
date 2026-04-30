@@ -7,9 +7,9 @@ def max_integer(my_list=[]):
     else:
         while i < len(my_list):
             if a >= my_list[i]:
-            i += 1
-            continue
-        else:
-            a = my_list[i]
-            i += 1
+                i += 1
+                continue
+            else:
+                a = my_list[i]
+                i += 1
         return a
