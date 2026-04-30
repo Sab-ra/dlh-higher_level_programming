@@ -4,9 +4,11 @@ def divisible_by_2(my_list=()):
         return None
     else:
         result = []
-        for i in my_list:
+        i = 0
+        while i < len(my_list):
             if my_list[i] % 2 == 0:
-                result[i] = True
+                result.append(True)
             else:
-                result[i] = False
+                result.append(False)
+            i += 1
         return result
