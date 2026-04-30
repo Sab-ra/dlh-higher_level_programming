@@ -7,13 +7,5 @@ def delete_at(my_list=[], idx=0):
     elif idx >= len(my_list):
         return my_list
     else:
-        i = 0
-        result = []
-        while i < len(my_list):
-            if i == idx:
-                i += 1
-                continue
-            else:
-                result.append(my_list[i])
-                i += 1
-        return result
+        del my_list[idx]
+        return my_list
