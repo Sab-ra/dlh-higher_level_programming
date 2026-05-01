@@ -12,8 +12,8 @@ def roman_to_int(roman_string):
             arab_list.append(roman_weights[c])
     num_list = []
     for i in arab_list:
-        num_list.append(arab_list[0])
-        if i > 0:
+        num_list.append(arab_list[i])
+        while i > 0:
              if arab_list[i] > arab_list[i - 1]:
                  if arab_list[i] == 1000:
                      del num_list[-1]
