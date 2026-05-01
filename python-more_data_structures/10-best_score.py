@@ -3,10 +3,8 @@ def best_score(a_dictionary):
     result = ''
     if a_dictionary == {}:
         return None
-        break
     elif a_dictionary == None:
         return None
-        break
     else:
         ch_list = list(a_dictionary)
         max_val = a_dictionary[ch_list[0]]
