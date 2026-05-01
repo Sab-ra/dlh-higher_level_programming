@@ -12,6 +12,6 @@ def best_score(a_dictionary):
             if max_val < a_dictionary[key]:
                 max_val = a_dictionary[key]
     for key in ch_list:
-        if a_dictionary[key] == max_value:
+        if a_dictionary[key] == max_val:
             result = key
     return result
