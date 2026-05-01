@@ -6,3 +6,4 @@
 5-number_keys.py
 6-print_sorted_dictionary.py
 7-update_dictionary.py
+8-simple_delete.py
