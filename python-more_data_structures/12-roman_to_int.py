@@ -16,4 +16,5 @@ def roman_to_int(roman_string):
                     nine_force.append(weight)
             else:
                 nine_force.append(weight)
-    return sum(nine_force)
+    result = sum(nine_force)
+    return result
