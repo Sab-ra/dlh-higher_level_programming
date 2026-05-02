@@ -3,12 +3,12 @@ def roman_to_int(roman_string):
     roman_weights = { 'M': 1000, 'D': 500, 'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1 }
     if roman_string is None:
         return 0
-    elif roman_string is not isinstance(roman_string, str):
+    elif roman_string not isinstance(roman_string, str):
         return 0
     else:
         nine_force = []
         for c in roman_string:
-            weight = riman_weights[c]
+            weight = roman_weights[c]
             if len(nine_force) > 0:
                 if weight > nine_force[-1]:
                     nine_force[-1] = weight - nine_force[-1]
@@ -16,5 +16,5 @@ def roman_to_int(roman_string):
                     nine_force.append(weight)
             else:
                 nine_force.append(weight)
-    result = sum(nine_force)
-    return result
+        result = sum(nine_force)
+        return result
