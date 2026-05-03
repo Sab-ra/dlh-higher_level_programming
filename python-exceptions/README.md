@@ -4,3 +4,4 @@
 4-list_division.py
 5-raise_exception.py
 6-raise_exception_msg.py
+100-safe_print_integer_err.py
