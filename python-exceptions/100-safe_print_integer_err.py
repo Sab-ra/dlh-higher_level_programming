@@ -2,6 +2,8 @@
 import sys
 def safe_print_integer_err(value):
     try:
+        if isinstance(value, bool):
+            value = "Bool"
         print("{:d}".format(value))
         return True
     except Exception as e:
