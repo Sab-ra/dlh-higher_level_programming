@@ -13,4 +13,4 @@ class Square:
 
     """Public property - area"""
     def area(self):
-        return size ** 2
+        return self.__size ** 2
