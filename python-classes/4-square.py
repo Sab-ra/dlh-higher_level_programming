@@ -5,11 +5,9 @@
 class Square:
     """Initialises object square after size validation"""
     def __init__(self, size=0):
-        """Initialize a square with size validation.
-        Args:
-            size: The size of the square (must be an integer >= 0).
-        """
-        self.set_size(size)
+        """Initialize a square through the setter."""
+        value = size
+        self.__size = size(self, value)
 
     def area(self):
         """Return current square area"""
@@ -22,7 +20,7 @@ class Square:
         """Check current sise of the square object"""
         return self.__size
 
-    @property.setter
+    @size.setter
     def size(self, value):
         """Single sourse of truth to set private property size of the square"""
         if not isinstance(value, int):
