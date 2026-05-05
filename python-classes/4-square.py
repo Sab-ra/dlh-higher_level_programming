@@ -12,8 +12,6 @@ class Square:
         """Return current square area"""
         return self.__size ** 2
 
-    """Getters and Setters"""
-
     @property
     def size(self):
         """Check current sise of the square object"""
