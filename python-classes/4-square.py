@@ -6,7 +6,6 @@ class Square:
     """Initialises object square after size validation"""
     def __init__(self, size=0):
         """Initialize a square through the setter."""
-        value = size
         self.__size = size(self, value)
 
     def area(self):
