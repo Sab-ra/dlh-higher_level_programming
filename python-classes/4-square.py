@@ -6,7 +6,7 @@ class Square:
     """Initialises object square after size validation"""
     def __init__(self, size=0):
         """Initialize a square through the setter."""
-        self.__size = size(self, value)
+        self.__size = value
 
     def area(self):
         """Return current square area"""
@@ -26,4 +26,3 @@ class Square:
             raise TypeError("size must be an integer")
         if value < 0:
             raise ValueError("size must be >= 0")
-        return value
