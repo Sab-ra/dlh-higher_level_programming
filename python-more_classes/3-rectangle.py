@@ -41,7 +41,7 @@ class Rectangle:
         """Return string representation of rectangle"""
         if not self.measures_ok():
             return ""
-        
+
         rectangle_stripe = ""
         for i in range(self.__height):
             rectangle_stripe += "#" * self.__width + "\n"
