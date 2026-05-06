@@ -22,7 +22,7 @@ class Rectangle:
 
     def perimeter(self):
         """Returns rectangle perimeter"""
-        return 2 ** (self.__width + self.__height)
+        return 2 * (self.__width + self.__height)
 
     """Getters & Setters"""
 
