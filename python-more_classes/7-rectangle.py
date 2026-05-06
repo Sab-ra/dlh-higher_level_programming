@@ -54,7 +54,7 @@ class Rectangle:
             return ""
 
         rectangle_stripe = ""
-        printable = str(Rectangle.print_symbol)
+        printable = str(self.print_symbol)
         for i in range(self.__height):
             rectangle_stripe += printable * self.__width + "\n"
         return rectangle_stripe.rstrip()
