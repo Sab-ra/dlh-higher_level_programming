@@ -32,19 +32,19 @@ class Rectangle:
     def perimeter(self):
         """Returns rectangle perimeter"""
 
-        if self.measures_ok == False:
+        if not self.measures_ok:
             return 0
         else:
             return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        if self.measures_ok == False:
-            print()
+        if not self.measures_ok:
+            return "\n"
         else:
-            y = self.__height
-            x = self.__width
-            for i in range(y):
-                print("#" * x)
+            drawing = ""
+            for i in range(self.__height):
+                drawing = drawing + "#" * range(self.__width) + "\n"
+            return drawing.rstrip()
 
     """Getters & Setters"""
 
