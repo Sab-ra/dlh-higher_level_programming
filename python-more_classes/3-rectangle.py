@@ -37,7 +37,7 @@ class Rectangle:
         else:
             return 2 * (self.__width + self.__height)
 
-    def __str__(self) -> str:
+    def __str__(self):
         if self.measures_ok == False:
             print()
         else:
