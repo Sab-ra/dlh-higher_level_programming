@@ -13,7 +13,7 @@ class Rectangle:
         self.width = width
         """Attr: horizontal measure of the rectangle"""
 
-        self.width = height
+        self.height = height
         """Attr: vertical measure of the rectangle"""
 
     
