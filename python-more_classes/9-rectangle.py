@@ -109,7 +109,7 @@ class Rectangle:
             raise TypeError("rect_2 must be an instance of Rectangle")
 
         return rect_2 if rect_2.area() > rect_1.area() else rect_1
-        
+
     # 6. Helpers
 
     def measures_ok(self):
