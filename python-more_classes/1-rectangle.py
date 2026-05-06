@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-Module Rectangle, is a figure with the right corners and different neighbouring sises
+Module Rectangle
 """
 
 
 class Rectangle:
     """Rectangle is made of more than one triangles"""
-    
+
     def __init__(self, width=0, height=0):
         """Initialize rectangle with """
 
@@ -16,18 +16,17 @@ class Rectangle:
         self.height = height
         """Attr: vertical measure of the rectangle"""
 
-    
     """Getters & Setters"""
 
     @property
     def width(self):
         """Retrieve private attr __width"""
-        
+
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Single sourse of validation and sets private instance attr: __width to value"""
+        """Validate & set private instance attr: __width"""
 
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
@@ -40,9 +39,10 @@ class Rectangle:
     def height(self):
         """doc"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
+        """Validate & set private instance attr: __height"""
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif value < 0:
