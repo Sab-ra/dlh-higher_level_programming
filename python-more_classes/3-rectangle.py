@@ -32,19 +32,20 @@ class Rectangle:
     def perimeter(self):
         """Returns rectangle perimeter"""
 
-        if not self.measures_ok:
+        if not self.measures_ok():
             return 0
         else:
             return 2 * (self.__width + self.__height)
 
     def __str__(self):
-        if not self.measures_ok:
-            return "\n"
-        else:
-            drawing = ""
-            for i in range(self.__height):
-                drawing = drawing + "#" * range(self.__width) + "\n"
-            return drawing.rstrip()
+        """Return string representation of rectangle"""
+        if not self.measures_ok():
+            return ""
+        
+        rectangle_stripe = ""
+        for i in range(self.__height):
+            rectangle_stripe += "#" * self.__width + "\n"
+        return rectangle_stripe.rstrip()
 
     """Getters & Setters"""
 
