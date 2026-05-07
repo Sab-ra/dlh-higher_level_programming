@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module that contains a function to read and print file. Bery-bery dandjurious module"""
+"""Bery-bery dandjurious module"""
 
 
 def read_file(filename=""):
