@@ -10,7 +10,10 @@ save = __import__('5-save_to_json_file').save_to_json_file
 
 def add_item(file="add_item.json"):
     """Add sys args to file args"""
-    thing = load(file)
+    try:
+        thing = load(file)
+    except FileNotFoundError:
+        thing = []
     another_thing = []
     for i in range(1, len(sys.argv)):
         another_thing.append(sys.argv[i])
