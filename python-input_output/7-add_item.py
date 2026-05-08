@@ -1,10 +1,18 @@
 #!/usr/bin/python3
-"""The essence of append"""
+"""Module handles arguments from CL and File"""
+
+
+import sys
 
 
 load = __import__('6-load_from_json_file').load_from_json_file
 save = __import__('5-save_to_json_file').save_to_json_file
 
-def add_item(sourse_file, output_file="add_item.json"):
-    thing = load(sourse_file)
-    return save(thing, output_file)
+def add_item(file="add_item.json"):
+    """Add sys args to file args"""
+    thing = load(file)
+    another_thing = []
+    for i in range(1, len(sys.argv)):
+        another_thing.append(sys.argv[i])
+    thing += another_thing
+    return save(thing, file)
