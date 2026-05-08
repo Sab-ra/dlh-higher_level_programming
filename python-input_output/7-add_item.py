@@ -17,4 +17,4 @@ def add_item(file="add_item.json"):
     thing += another_thing
     return save(thing, file)
 
-add_item(sys.argv[0])
+add_item()
