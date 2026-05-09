@@ -21,7 +21,7 @@ class Student:
                 if hasattr(self, key):
                     new_dict[key] = getattr(self, key)
             return new_dict
-        
+
     def reload_from_json(self, json):
         """Rewrites Class attributes"""
 
