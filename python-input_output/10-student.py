@@ -11,14 +11,13 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        result = {}
-        if isinstance(attrs, dict):
+        """Return dictionary representation for JSON serialization"""
+        if attrs is None:
+            return self.__dict__
+        
+        if isinstance(attrs, list):
             new_dict = {}
             for key in attrs:
-                if attrs[key] != None:
+                if hasattr(self, key):
                     new_dict[key] = getattr(self, key)
-            if new_dict != {}:
-                result = new_dict
-            else:
-                result = self.__dict__
-        return result
+            return new_dict
