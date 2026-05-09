@@ -14,7 +14,7 @@ class Student:
         """Return dictionary representation for JSON serialization"""
         if attrs is None:
             return self.__dict__
-        
+
         if isinstance(attrs, list):
             new_dict = {}
             for key in attrs:
