@@ -24,4 +24,5 @@ class Student:
         
     def reload_from_json(self, json):
         """Rewrites Class attributes"""
-        return self.__init__(json)
+        json_dict = json.__dict__
+        self.__dict__.update(json_dict)
