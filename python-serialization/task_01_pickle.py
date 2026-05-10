@@ -29,7 +29,7 @@ class CustomObject:
             return None
 
     @classmethod
-    def deserizlize(cls, filename):
+    def deserialize(cls, filename):
         """Become unknown object"""
         try:
             with open(filename, "rb") as f:
