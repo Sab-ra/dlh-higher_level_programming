@@ -15,9 +15,10 @@ class CustomObject:
         self.is_student = is_student
 
     def display(self):
-        """Prints info of object"""
-        for key, value in self.__dict__.items():
-            print("{}: {}".format(key.replace("_", "").title(), value))
+        print("Name: {}".format(self.name))
+        print("Age: {}".format(self.age))
+        print("Is Student: {}".format(self.is_student))
+
 
     def serialize(self, filename):
         """Self to pickle file"""
