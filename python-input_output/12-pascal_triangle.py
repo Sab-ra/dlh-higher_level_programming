@@ -3,7 +3,7 @@
 
 
 def pascal_triangle(n):
-    # Defind array
+    """Returns list of lists for PT"""
     pt = []
     ending = [1]
     if n <= 0:
