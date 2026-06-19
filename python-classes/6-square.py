@@ -12,7 +12,7 @@ class Square:
     def area(self):
         """Return current square area"""
         return self.__size ** 2
-    
+
     def my_print(self):
         """Prints the square"""
         if self.__size > 0:
@@ -30,7 +30,7 @@ class Square:
     def size(self):
         """Check current sise of the square object"""
         return self.__size
-    
+
     @property
     def position(self):
         """Check qurrent position coordinates"""
@@ -62,8 +62,9 @@ class Square:
             outcome.append(True)
         else:
             outcome.append(False)
-        
+
         if desired_outcome != outcome:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
+            
