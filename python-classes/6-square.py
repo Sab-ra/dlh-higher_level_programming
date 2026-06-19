@@ -48,9 +48,9 @@ class Square:
     @position.setter
     def position(self, value):
         """Sets position on birth of an instance, or during it's life"""
-        if not isinstance(value, tuple) and len(value) != 2:
+        if not isinstance(value, tuple) or len(value) != 2:
             raise TypeError('position must be a tuple of 2 positive integers')
-        elif any(value) < 0:
+        elif value[0] < 0 or value[1]:
             raise TypeError('position must be a tuple of 2 positive integers')
         else:
             self.__position = value
