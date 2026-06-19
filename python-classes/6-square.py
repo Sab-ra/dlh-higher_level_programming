@@ -50,6 +50,8 @@ class Square:
         """Sets position on birth of an instance, or during it's life"""
         if not isinstance(value, tuple) and len(value) != 2:
             raise TypeError('position must be a tuple of 2 positive integers')
+        elif any(value) < 0:
+            raise TypeError('position must be a tuple of 2 positive integers')
         else:
             self.__position = value
             
